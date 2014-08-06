@@ -122,19 +122,11 @@
 		9CCB54B01990286300489D68 /* sideMenu2 */ = {
 			isa = PBXGroup;
 			children = (
-				9CCB54B91990286300489D68 /* AppDelegate.h */,
-				9CCB54BA1990286300489D68 /* AppDelegate.m */,
-				9CCB54BC1990286300489D68 /* Main.storyboard */,
-				9CCB54BF1990286300489D68 /* ViewController.h */,
-				9CCB54C01990286300489D68 /* ViewController.m */,
+				9CFB64E819927E6000D01480 /* Root */,
+				9CFB64E719927E4300D01480 /* Controllers */,
+				9CFB64E619927E2600D01480 /* Views */,
 				9CCB54C21990286300489D68 /* Images.xcassets */,
 				9CCB54B11990286300489D68 /* Supporting Files */,
-				9CCB54DF19902DB800489D68 /* MenuView.xib */,
-				9CCB54E119902E1600489D68 /* MenuView.h */,
-				9CCB54E219902E1600489D68 /* MenuView.m */,
-				9CAECE21199179CF002BD4AA /* TopMenuView.xib */,
-				9CAECE2319917ADE002BD4AA /* TopMenuView.h */,
-				9CAECE2419917ADE002BD4AA /* TopMenuView.m */,
 			);
 			path = sideMenu2;
 			sourceTree = "<group>";
@@ -166,6 +158,38 @@
 				9CCB54D21990286300489D68 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CFB64E619927E2600D01480 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CCB54BC1990286300489D68 /* Main.storyboard */,
+				9CAECE21199179CF002BD4AA /* TopMenuView.xib */,
+				9CCB54DF19902DB800489D68 /* MenuView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9CFB64E719927E4300D01480 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CCB54BF1990286300489D68 /* ViewController.h */,
+				9CCB54C01990286300489D68 /* ViewController.m */,
+				9CCB54E119902E1600489D68 /* MenuView.h */,
+				9CCB54E219902E1600489D68 /* MenuView.m */,
+				9CAECE2319917ADE002BD4AA /* TopMenuView.h */,
+				9CAECE2419917ADE002BD4AA /* TopMenuView.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9CFB64E819927E6000D01480 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				9CCB54B91990286300489D68 /* AppDelegate.h */,
+				9CCB54BA1990286300489D68 /* AppDelegate.m */,
+			);
+			name = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
