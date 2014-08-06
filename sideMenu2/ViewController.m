@@ -30,6 +30,8 @@
     // Listener
     self.listener=[[Listener alloc]init];
     [self.listener updateMenuWithAction:-1];
+    
+    self.containerView.backgroundColor=[UIColor greenColor];
 
 }
 
