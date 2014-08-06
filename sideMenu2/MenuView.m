@@ -10,6 +10,7 @@
 
 @implementation MenuView
 @synthesize closeOutlet;
+@synthesize listener;
 
 
 - (id)initWithFrame:(CGRect)frame
@@ -23,16 +24,20 @@
 
 #pragma mark - UI Actions
 - (IBAction)closeMenu:(id)sender {
+    self.listener=[[Listener alloc]init];
+    [self.listener updateMenuWithAction:0];
     [self close];
 
 }
 - (IBAction)optionOne:(id)sender {
-    NSLog(@"Option 1");
-    [self closeMenu:sender];
+    self.listener=[[Listener alloc]init];
+    [self.listener updateMenuWithAction:1];
+    [self close];
 }
 - (IBAction)optionTwo:(id)sender {
-    NSLog(@"Option 2");
-    [self closeMenu:sender];
+    self.listener=[[Listener alloc]init];
+    [self.listener updateMenuWithAction:2];
+    [self close];
 }
 
 

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Listener.h"
 
 @interface TopMenuView : UIView
+
+
+// Listener
+@property (nonatomic,strong) Listener *listener;
 
 @end

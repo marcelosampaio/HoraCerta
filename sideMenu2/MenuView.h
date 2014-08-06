@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Listener.h"
+
 
 @interface MenuView : UIView
 
 @property (weak, nonatomic) IBOutlet UIButton *closeOutlet;
 
-
+// Listener
+@property (nonatomic,strong) Listener *listener;
 
 
 @end

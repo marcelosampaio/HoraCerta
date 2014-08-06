@@ -8,7 +8,9 @@
 
 #import "TopMenuView.h"
 
+
 @implementation TopMenuView
+@synthesize listener;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -22,21 +24,19 @@
 #pragma mark - UI Actions
 
 - (IBAction)optionOne:(id)sender {
-    NSLog(@"TOP MENU option one");
-    [self close];
+    [self closeWithAction:1];
 }
 
 - (IBAction)optionTwo:(id)sender {
-    NSLog(@"TOP MENU option two");
-    [self close];
+    [self closeWithAction:2];
 }
 
 - (IBAction)closeMenu:(id)sender {
-    [self close];
+    [self closeWithAction:0];
 }
 
 #pragma mark - Working Methods
--(void)close {
+-(void)closeWithAction:(int)action {
     // Animate keyboard
     [UIView animateWithDuration:0.2 animations:^(void){
         //Animacao
@@ -51,6 +51,9 @@
         [UIView animateWithDuration:0.25f animations:^(void)
          {
              [self removeFromSuperview];
+             // update listener
+             self.listener=[[Listener alloc]init];
+             [self.listener updateMenuWithAction:action];
              
          }];
         

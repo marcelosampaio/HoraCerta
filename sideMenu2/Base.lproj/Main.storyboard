@@ -71,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="31" y="-659"/>
         </scene>
-        <!--View Controller-->
+        <!--Option One View Controller-->
         <scene sceneID="Uo9-Nh-QmV">
             <objects>
-                <viewController id="TI4-od-bDD" sceneMemberID="viewController">
+                <viewController id="TI4-od-bDD" customClass="OptionOneViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Qp-ET-qTI"/>
                         <viewControllerLayoutGuide type="bottom" id="DqC-OQ-9X4"/>
@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="1479" y="-1449"/>
         </scene>
-        <!--View Controller-->
+        <!--Option Two View Controller-->
         <scene sceneID="m5G-AI-NJz">
             <objects>
-                <viewController id="Gvi-LH-Gpe" sceneMemberID="viewController">
+                <viewController id="Gvi-LH-Gpe" customClass="OptionTwoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lAJ-Xb-jMl"/>
                         <viewControllerLayoutGuide type="bottom" id="kgv-OG-XTr"/>

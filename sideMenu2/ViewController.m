@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+
+
 @interface ViewController ()
 
 @end
@@ -16,17 +18,27 @@
 @synthesize menuOutlet,menuTop,containerView,containerViewTop;
 @synthesize menuIsOnTheScreen;
 @synthesize timer;
+@synthesize listener;
+@synthesize topMenu;
+
 
 #pragma mark - View Initialization
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Listener
+    self.listener=[[Listener alloc]init];
+    [self.listener updateMenuWithAction:-1];
 
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar setHidden:YES];
+    // Menu Type
+    self.topMenu=NO;
+    
 }
 
 #pragma mark - UI Actions
@@ -40,16 +52,38 @@
 
 #pragma mark - Timer Methods
 -(void)startTimer {
+    // set listener to initial value
+    [self.listener updateMenuWithAction:-1];
     [self.timer invalidate];
+    // start timer
     self.timer=[NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(pulse) userInfo:nil repeats:YES];
 }
 -(void)pulse {
-    NSLog(@"....pulsing");
+    NSLog(@"....pulsing with Listener=%d",[self.listener menuAction]);
+    int menuAction=[self.listener menuAction];
+    if (menuAction==0) {
+        [self.timer invalidate];
+        return;
+    } else if (menuAction==1) {
+        NSLog(@"segue to option 1");
+        [self.timer invalidate];
+        [self performSegueWithIdentifier:@"showOptionOne" sender:self];
+        return;
+    } else if (menuAction==2) {
+        NSLog(@"segue to option 2");
+        [self.timer invalidate];
+        [self performSegueWithIdentifier:@"showOptionTwo" sender:self];
+        return;
+    }
 }
 
 
 #pragma mark - Menu Methods
 -(void)showMenu {
+    
+    // Menu Type
+    self.topMenu=NO;
+    
     // start timer
     [self startTimer];
 
@@ -75,6 +109,10 @@
 }
 
 -(void)showTopMenu {
+    
+    // Menu Type
+    self.topMenu=YES;
+    
     // start timer
     [self startTimer];
     

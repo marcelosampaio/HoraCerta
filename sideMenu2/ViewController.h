@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Listener.h"
 
 @interface ViewController : UIViewController
 
@@ -19,5 +20,12 @@
 @property (strong,nonatomic) NSTimer *timer;
 
 @property BOOL menuIsOnTheScreen;
+
+
+// Listener
+@property (nonatomic,strong) Listener *listener;
+
+// Menu Type
+@property BOOL topMenu;
 
 @end
