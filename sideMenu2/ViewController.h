@@ -10,4 +10,14 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *menuOutlet;
+@property (weak, nonatomic) IBOutlet UIButton *menuTop;
+
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UIView *containerViewTop;
+
+@property (strong,nonatomic) NSTimer *timer;
+
+@property BOOL menuIsOnTheScreen;
+
 @end

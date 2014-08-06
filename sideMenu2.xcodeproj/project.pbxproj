@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CAECE22199179CF002BD4AA /* TopMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CAECE21199179CF002BD4AA /* TopMenuView.xib */; };
+		9CAECE2519917ADE002BD4AA /* TopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAECE2419917ADE002BD4AA /* TopMenuView.m */; };
 		9CCB54AB1990286300489D68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCB54AA1990286300489D68 /* Foundation.framework */; };
 		9CCB54AD1990286300489D68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCB54AC1990286300489D68 /* CoreGraphics.framework */; };
 		9CCB54AF1990286300489D68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCB54AE1990286300489D68 /* UIKit.framework */; };
@@ -21,6 +23,8 @@
 		9CCB54CC1990286300489D68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCB54AE1990286300489D68 /* UIKit.framework */; };
 		9CCB54D41990286300489D68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CCB54D21990286300489D68 /* InfoPlist.strings */; };
 		9CCB54D61990286300489D68 /* sideMenu2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB54D51990286300489D68 /* sideMenu2Tests.m */; };
+		9CCB54E019902DB800489D68 /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCB54DF19902DB800489D68 /* MenuView.xib */; };
+		9CCB54E319902E1600489D68 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB54E219902E1600489D68 /* MenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9CAECE21199179CF002BD4AA /* TopMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopMenuView.xib; sourceTree = "<group>"; };
+		9CAECE2319917ADE002BD4AA /* TopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopMenuView.h; sourceTree = "<group>"; };
+		9CAECE2419917ADE002BD4AA /* TopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopMenuView.m; sourceTree = "<group>"; };
 		9CCB54A71990286300489D68 /* sideMenu2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sideMenu2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCB54AA1990286300489D68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9CCB54AC1990286300489D68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +60,9 @@
 		9CCB54D11990286300489D68 /* sideMenu2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sideMenu2Tests-Info.plist"; sourceTree = "<group>"; };
 		9CCB54D31990286300489D68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9CCB54D51990286300489D68 /* sideMenu2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sideMenu2Tests.m; sourceTree = "<group>"; };
+		9CCB54DF19902DB800489D68 /* MenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
+		9CCB54E119902E1600489D68 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
+		9CCB54E219902E1600489D68 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +129,12 @@
 				9CCB54C01990286300489D68 /* ViewController.m */,
 				9CCB54C21990286300489D68 /* Images.xcassets */,
 				9CCB54B11990286300489D68 /* Supporting Files */,
+				9CCB54DF19902DB800489D68 /* MenuView.xib */,
+				9CCB54E119902E1600489D68 /* MenuView.h */,
+				9CCB54E219902E1600489D68 /* MenuView.m */,
+				9CAECE21199179CF002BD4AA /* TopMenuView.xib */,
+				9CAECE2319917ADE002BD4AA /* TopMenuView.h */,
+				9CAECE2419917ADE002BD4AA /* TopMenuView.m */,
 			);
 			path = sideMenu2;
 			sourceTree = "<group>";
@@ -229,8 +245,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CCB54C31990286300489D68 /* Images.xcassets in Resources */,
+				9CCB54E019902DB800489D68 /* MenuView.xib in Resources */,
 				9CCB54B51990286300489D68 /* InfoPlist.strings in Resources */,
 				9CCB54BE1990286300489D68 /* Main.storyboard in Resources */,
+				9CAECE22199179CF002BD4AA /* TopMenuView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CCB54C11990286300489D68 /* ViewController.m in Sources */,
+				9CCB54E319902E1600489D68 /* MenuView.m in Sources */,
 				9CCB54BB1990286300489D68 /* AppDelegate.m in Sources */,
 				9CCB54B71990286300489D68 /* main.m in Sources */,
+				9CAECE2519917ADE002BD4AA /* TopMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +476,7 @@
 				9CCB54DB1990286300489D68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CCB54DC1990286300489D68 /* Build configuration list for PBXNativeTarget "sideMenu2Tests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +485,7 @@
 				9CCB54DE1990286300489D68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
