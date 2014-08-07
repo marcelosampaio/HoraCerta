@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "Listener.h"
 
-
 @interface MenuView : UIView
 
+// Outlet
 @property (weak, nonatomic) IBOutlet UIButton *closeOutlet;
+
 
 // Listener
 @property (nonatomic,strong) Listener *listener;

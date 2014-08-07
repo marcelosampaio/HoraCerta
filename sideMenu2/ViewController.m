@@ -63,18 +63,22 @@
 -(void)pulse {
     NSLog(@"....pulsing with Listener=%d",[self.listener menuAction]);
     int menuAction=[self.listener menuAction];
+    
     if (menuAction==0) {
+        self.menuTop.hidden=NO;
         [self.timer invalidate];
         return;
     } else if (menuAction==1) {
         NSLog(@"segue to option 1");
         [self.timer invalidate];
         [self performSegueWithIdentifier:@"showOptionOne" sender:self];
+        self.menuTop.hidden=NO;
         return;
     } else if (menuAction==2) {
         NSLog(@"segue to option 2");
         [self.timer invalidate];
         [self performSegueWithIdentifier:@"showOptionTwo" sender:self];
+        self.menuTop.hidden=NO;
         return;
     }
 }
@@ -85,6 +89,7 @@
     
     // Menu Type
     self.topMenu=NO;
+    self.menuTop.hidden=YES;
     
     // start timer
     [self startTimer];
@@ -136,6 +141,7 @@
 }
 
 
+#pragma mark - Touch Events
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     if (!self.menuIsOnTheScreen) {
