@@ -52,8 +52,8 @@
                                     <action selector="menuTop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="208-Js-taR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sample" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Meg-kv-DTg">
-                                <rect key="frame" x="117" y="23" width="86" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hora Certa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Meg-kv-DTg">
+                                <rect key="frame" x="97" y="23" width="126" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31" y="-659"/>
+            <point key="canvasLocation" x="-3169" y="-963"/>
         </scene>
         <!--Option One View Controller-->
         <scene sceneID="Uo9-Nh-QmV">
@@ -118,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wnY-pv-BE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1479" y="-1449"/>
+            <point key="canvasLocation" x="-2557" y="-1993"/>
         </scene>
         <!--Option Two View Controller-->
         <scene sceneID="m5G-AI-NJz">
@@ -160,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYe-ev-dgm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1479" y="-714"/>
+            <point key="canvasLocation" x="-2557" y="-1258"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ipf-iX-oMP">
@@ -179,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ySM-gV-YIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1474" y="388"/>
+            <point key="canvasLocation" x="-2562" y="-156"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="alk-qf-I8e">
@@ -200,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bI-Hf-IdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1479" y="99"/>
+            <point key="canvasLocation" x="-2557" y="-445"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kGG-Hz-cgF">
@@ -218,7 +218,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HDO-8e-jBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-495" y="-659"/>
+            <point key="canvasLocation" x="-3695" y="-963"/>
         </scene>
     </scenes>
     <resources>

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:sideMenu2.xcodeproj">
+      location = "self:HoraCerta.xcodeproj">
    </FileRef>
 </Workspace>

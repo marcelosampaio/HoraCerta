@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C51924119B41B790095323D /* BEMAnalogClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C51923819B41B790095323D /* BEMAnalogClockView.m */; };
+		9C51924219B41B790095323D /* BEMHandsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C51923A19B41B790095323D /* BEMHandsAnimation.m */; };
+		9C51924319B41B790095323D /* BEMHourHand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C51923C19B41B790095323D /* BEMHourHand.m */; };
+		9C51924419B41B790095323D /* BEMMinuteHand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C51923E19B41B790095323D /* BEMMinuteHand.m */; };
+		9C51924519B41B790095323D /* BEMSecondHand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C51924019B41B790095323D /* BEMSecondHand.m */; };
 		9CAECE22199179CF002BD4AA /* TopMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CAECE21199179CF002BD4AA /* TopMenuView.xib */; };
 		9CAECE2519917ADE002BD4AA /* TopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAECE2419917ADE002BD4AA /* TopMenuView.m */; };
 		9CCB54AB1990286300489D68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCB54AA1990286300489D68 /* Foundation.framework */; };
@@ -22,7 +27,7 @@
 		9CCB54CB1990286300489D68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCB54AA1990286300489D68 /* Foundation.framework */; };
 		9CCB54CC1990286300489D68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCB54AE1990286300489D68 /* UIKit.framework */; };
 		9CCB54D41990286300489D68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CCB54D21990286300489D68 /* InfoPlist.strings */; };
-		9CCB54D61990286300489D68 /* sideMenu2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB54D51990286300489D68 /* sideMenu2Tests.m */; };
+		9CCB54D61990286300489D68 /* HoraCertaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB54D51990286300489D68 /* HoraCertaTests.m */; };
 		9CCB54E019902DB800489D68 /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCB54DF19902DB800489D68 /* MenuView.xib */; };
 		9CCB54E319902E1600489D68 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB54E219902E1600489D68 /* MenuView.m */; };
 		9CFB64EC1992900C00D01480 /* Listener.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB64EB1992900C00D01480 /* Listener.m */; };
@@ -41,28 +46,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C51923719B41B790095323D /* BEMAnalogClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnalogClockView.h; sourceTree = "<group>"; };
+		9C51923819B41B790095323D /* BEMAnalogClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAnalogClockView.m; sourceTree = "<group>"; };
+		9C51923919B41B790095323D /* BEMHandsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMHandsAnimation.h; sourceTree = "<group>"; };
+		9C51923A19B41B790095323D /* BEMHandsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMHandsAnimation.m; sourceTree = "<group>"; };
+		9C51923B19B41B790095323D /* BEMHourHand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMHourHand.h; sourceTree = "<group>"; };
+		9C51923C19B41B790095323D /* BEMHourHand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMHourHand.m; sourceTree = "<group>"; };
+		9C51923D19B41B790095323D /* BEMMinuteHand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMMinuteHand.h; sourceTree = "<group>"; };
+		9C51923E19B41B790095323D /* BEMMinuteHand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMMinuteHand.m; sourceTree = "<group>"; };
+		9C51923F19B41B790095323D /* BEMSecondHand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMSecondHand.h; sourceTree = "<group>"; };
+		9C51924019B41B790095323D /* BEMSecondHand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMSecondHand.m; sourceTree = "<group>"; };
 		9CAECE21199179CF002BD4AA /* TopMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopMenuView.xib; sourceTree = "<group>"; };
 		9CAECE2319917ADE002BD4AA /* TopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopMenuView.h; sourceTree = "<group>"; };
 		9CAECE2419917ADE002BD4AA /* TopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopMenuView.m; sourceTree = "<group>"; };
-		9CCB54A71990286300489D68 /* sideMenu2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sideMenu2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CCB54A71990286300489D68 /* HoraCerta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoraCerta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCB54AA1990286300489D68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9CCB54AC1990286300489D68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9CCB54AE1990286300489D68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9CCB54B21990286300489D68 /* sideMenu2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sideMenu2-Info.plist"; sourceTree = "<group>"; };
+		9CCB54B21990286300489D68 /* HoraCerta-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HoraCerta-Info.plist"; sourceTree = "<group>"; };
 		9CCB54B41990286300489D68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9CCB54B61990286300489D68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9CCB54B81990286300489D68 /* sideMenu2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sideMenu2-Prefix.pch"; sourceTree = "<group>"; };
+		9CCB54B81990286300489D68 /* HoraCerta-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HoraCerta-Prefix.pch"; sourceTree = "<group>"; };
 		9CCB54B91990286300489D68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9CCB54BA1990286300489D68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9CCB54BD1990286300489D68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CCB54BF1990286300489D68 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9CCB54C01990286300489D68 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9CCB54C21990286300489D68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9CCB54C81990286300489D68 /* sideMenu2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sideMenu2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CCB54C81990286300489D68 /* HoraCertaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoraCertaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCB54C91990286300489D68 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		9CCB54D11990286300489D68 /* sideMenu2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sideMenu2Tests-Info.plist"; sourceTree = "<group>"; };
+		9CCB54D11990286300489D68 /* HoraCertaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HoraCertaTests-Info.plist"; sourceTree = "<group>"; };
 		9CCB54D31990286300489D68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9CCB54D51990286300489D68 /* sideMenu2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sideMenu2Tests.m; sourceTree = "<group>"; };
+		9CCB54D51990286300489D68 /* HoraCertaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HoraCertaTests.m; sourceTree = "<group>"; };
 		9CCB54DF19902DB800489D68 /* MenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
 		9CCB54E119902E1600489D68 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
 		9CCB54E219902E1600489D68 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
@@ -98,11 +113,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C51923619B41B790095323D /* BEMAnalogClock */ = {
+			isa = PBXGroup;
+			children = (
+				9C51923719B41B790095323D /* BEMAnalogClockView.h */,
+				9C51923819B41B790095323D /* BEMAnalogClockView.m */,
+				9C51923919B41B790095323D /* BEMHandsAnimation.h */,
+				9C51923A19B41B790095323D /* BEMHandsAnimation.m */,
+				9C51923B19B41B790095323D /* BEMHourHand.h */,
+				9C51923C19B41B790095323D /* BEMHourHand.m */,
+				9C51923D19B41B790095323D /* BEMMinuteHand.h */,
+				9C51923E19B41B790095323D /* BEMMinuteHand.m */,
+				9C51923F19B41B790095323D /* BEMSecondHand.h */,
+				9C51924019B41B790095323D /* BEMSecondHand.m */,
+			);
+			path = BEMAnalogClock;
+			sourceTree = "<group>";
+		};
 		9CCB549E1990286300489D68 = {
 			isa = PBXGroup;
 			children = (
-				9CCB54B01990286300489D68 /* sideMenu2 */,
-				9CCB54CF1990286300489D68 /* sideMenu2Tests */,
+				9CCB54B01990286300489D68 /* HoraCerta */,
+				9CCB54CF1990286300489D68 /* HoraCertaTests */,
 				9CCB54A91990286300489D68 /* Frameworks */,
 				9CCB54A81990286300489D68 /* Products */,
 			);
@@ -111,8 +143,8 @@
 		9CCB54A81990286300489D68 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CCB54A71990286300489D68 /* sideMenu2.app */,
-				9CCB54C81990286300489D68 /* sideMenu2Tests.xctest */,
+				9CCB54A71990286300489D68 /* HoraCerta.app */,
+				9CCB54C81990286300489D68 /* HoraCertaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,9 +160,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9CCB54B01990286300489D68 /* sideMenu2 */ = {
+		9CCB54B01990286300489D68 /* HoraCerta */ = {
 			isa = PBXGroup;
 			children = (
+				9C51923619B41B790095323D /* BEMAnalogClock */,
 				9CFB64E919928FE400D01480 /* Model */,
 				9CFB64E819927E6000D01480 /* Root */,
 				9CFB64E719927E4300D01480 /* Controllers */,
@@ -138,33 +171,35 @@
 				9CCB54C21990286300489D68 /* Images.xcassets */,
 				9CCB54B11990286300489D68 /* Supporting Files */,
 			);
+			name = HoraCerta;
 			path = sideMenu2;
 			sourceTree = "<group>";
 		};
 		9CCB54B11990286300489D68 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9CCB54B21990286300489D68 /* sideMenu2-Info.plist */,
+				9CCB54B21990286300489D68 /* HoraCerta-Info.plist */,
 				9CCB54B31990286300489D68 /* InfoPlist.strings */,
 				9CCB54B61990286300489D68 /* main.m */,
-				9CCB54B81990286300489D68 /* sideMenu2-Prefix.pch */,
+				9CCB54B81990286300489D68 /* HoraCerta-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9CCB54CF1990286300489D68 /* sideMenu2Tests */ = {
+		9CCB54CF1990286300489D68 /* HoraCertaTests */ = {
 			isa = PBXGroup;
 			children = (
-				9CCB54D51990286300489D68 /* sideMenu2Tests.m */,
+				9CCB54D51990286300489D68 /* HoraCertaTests.m */,
 				9CCB54D01990286300489D68 /* Supporting Files */,
 			);
+			name = HoraCertaTests;
 			path = sideMenu2Tests;
 			sourceTree = "<group>";
 		};
 		9CCB54D01990286300489D68 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9CCB54D11990286300489D68 /* sideMenu2Tests-Info.plist */,
+				9CCB54D11990286300489D68 /* HoraCertaTests-Info.plist */,
 				9CCB54D21990286300489D68 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -218,9 +253,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9CCB54A61990286300489D68 /* sideMenu2 */ = {
+		9CCB54A61990286300489D68 /* HoraCerta */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CCB54D91990286300489D68 /* Build configuration list for PBXNativeTarget "sideMenu2" */;
+			buildConfigurationList = 9CCB54D91990286300489D68 /* Build configuration list for PBXNativeTarget "HoraCerta" */;
 			buildPhases = (
 				9CCB54A31990286300489D68 /* Sources */,
 				9CCB54A41990286300489D68 /* Frameworks */,
@@ -230,14 +265,14 @@
 			);
 			dependencies = (
 			);
-			name = sideMenu2;
+			name = HoraCerta;
 			productName = sideMenu2;
-			productReference = 9CCB54A71990286300489D68 /* sideMenu2.app */;
+			productReference = 9CCB54A71990286300489D68 /* HoraCerta.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9CCB54C71990286300489D68 /* sideMenu2Tests */ = {
+		9CCB54C71990286300489D68 /* HoraCertaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CCB54DC1990286300489D68 /* Build configuration list for PBXNativeTarget "sideMenu2Tests" */;
+			buildConfigurationList = 9CCB54DC1990286300489D68 /* Build configuration list for PBXNativeTarget "HoraCertaTests" */;
 			buildPhases = (
 				9CCB54C41990286300489D68 /* Sources */,
 				9CCB54C51990286300489D68 /* Frameworks */,
@@ -248,9 +283,9 @@
 			dependencies = (
 				9CCB54CE1990286300489D68 /* PBXTargetDependency */,
 			);
-			name = sideMenu2Tests;
+			name = HoraCertaTests;
 			productName = sideMenu2Tests;
-			productReference = 9CCB54C81990286300489D68 /* sideMenu2Tests.xctest */;
+			productReference = 9CCB54C81990286300489D68 /* HoraCertaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -267,7 +302,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9CCB54A21990286300489D68 /* Build configuration list for PBXProject "sideMenu2" */;
+			buildConfigurationList = 9CCB54A21990286300489D68 /* Build configuration list for PBXProject "HoraCerta" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -280,8 +315,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9CCB54A61990286300489D68 /* sideMenu2 */,
-				9CCB54C71990286300489D68 /* sideMenu2Tests */,
+				9CCB54A61990286300489D68 /* HoraCerta */,
+				9CCB54C71990286300489D68 /* HoraCertaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -314,13 +349,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C51924219B41B790095323D /* BEMHandsAnimation.m in Sources */,
 				9CCB54C11990286300489D68 /* ViewController.m in Sources */,
 				9CFB64F21992A53400D01480 /* OptionOneViewController.m in Sources */,
+				9C51924419B41B790095323D /* BEMMinuteHand.m in Sources */,
 				9CFB64EC1992900C00D01480 /* Listener.m in Sources */,
 				9CCB54E319902E1600489D68 /* MenuView.m in Sources */,
 				9CCB54BB1990286300489D68 /* AppDelegate.m in Sources */,
+				9C51924319B41B790095323D /* BEMHourHand.m in Sources */,
+				9C51924119B41B790095323D /* BEMAnalogClockView.m in Sources */,
 				9CCB54B71990286300489D68 /* main.m in Sources */,
 				9CFB64F51992A54600D01480 /* OptionTwoViewController.m in Sources */,
+				9C51924519B41B790095323D /* BEMSecondHand.m in Sources */,
 				9CAECE2519917ADE002BD4AA /* TopMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,7 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CCB54D61990286300489D68 /* sideMenu2Tests.m in Sources */,
+				9CCB54D61990286300489D68 /* HoraCertaTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +378,7 @@
 /* Begin PBXTargetDependency section */
 		9CCB54CE1990286300489D68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9CCB54A61990286300489D68 /* sideMenu2 */;
+			target = 9CCB54A61990286300489D68 /* HoraCerta */;
 			targetProxy = 9CCB54CD1990286300489D68 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -446,10 +486,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Humberto Sampaio (WB6FHFDGC3)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "sideMenu2/sideMenu2-Prefix.pch";
-				INFOPLIST_FILE = "sideMenu2/sideMenu2-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "sideMenu2/HoraCerta-Prefix.pch";
+				INFOPLIST_FILE = "sideMenu2/HoraCerta-Info.plist";
+				PRODUCT_NAME = HoraCerta;
+				PROVISIONING_PROFILE = "f6cb0ecc-3d24-40f9-b758-e0c62abe23dd";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -459,10 +501,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Humberto Sampaio (5U294U2N56)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "sideMenu2/sideMenu2-Prefix.pch";
-				INFOPLIST_FILE = "sideMenu2/sideMenu2-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "sideMenu2/HoraCerta-Prefix.pch";
+				INFOPLIST_FILE = "sideMenu2/HoraCerta-Info.plist";
+				PRODUCT_NAME = HoraCerta;
+				PROVISIONING_PROFILE = "120799c2-8d57-4f06-8487-c2d893d8d040";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -482,8 +526,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "sideMenu2Tests/sideMenu2Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "sideMenu2Tests/HoraCertaTests-Info.plist";
+				PRODUCT_NAME = HoraCertaTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -500,8 +544,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sideMenu2/sideMenu2-Prefix.pch";
-				INFOPLIST_FILE = "sideMenu2Tests/sideMenu2Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "sideMenu2Tests/HoraCertaTests-Info.plist";
+				PRODUCT_NAME = HoraCertaTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -510,7 +554,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9CCB54A21990286300489D68 /* Build configuration list for PBXProject "sideMenu2" */ = {
+		9CCB54A21990286300489D68 /* Build configuration list for PBXProject "HoraCerta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CCB54D71990286300489D68 /* Debug */,
@@ -519,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CCB54D91990286300489D68 /* Build configuration list for PBXNativeTarget "sideMenu2" */ = {
+		9CCB54D91990286300489D68 /* Build configuration list for PBXNativeTarget "HoraCerta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CCB54DA1990286300489D68 /* Debug */,
@@ -528,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CCB54DC1990286300489D68 /* Build configuration list for PBXNativeTarget "sideMenu2Tests" */ = {
+		9CCB54DC1990286300489D68 /* Build configuration list for PBXNativeTarget "HoraCertaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CCB54DD1990286300489D68 /* Debug */,

@@ -1,6 +1,6 @@
 //
-//  sideMenu2Tests.m
-//  sideMenu2Tests
+//  HoraCertaTests.m
+//  HoraCertaTests
 //
 //  Created by Marcelo Sampaio on 8/4/14.
 //  Copyright (c) 2014 Marcelo Sampaio. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface sideMenu2Tests : XCTestCase
+@interface HoraCertaTests : XCTestCase
 
 @end
 
-@implementation sideMenu2Tests
+@implementation HoraCertaTests
 
 - (void)setUp
 {

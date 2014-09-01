@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  sideMenu2
+//  HoraCerta
 //
 //  Created by Marcelo Sampaio on 8/4/14.
 //  Copyright (c) 2014 Marcelo Sampaio. All rights reserved.
@@ -148,8 +148,8 @@
         return;
     }
     NSLog(@"touch detected");
-    UITouch *myTouch = [touches anyObject];
-    CGPoint point = [myTouch locationInView:self.containerView];
+    UITouch *touch = [touches anyObject];
+    CGPoint point = [touch locationInView:self.containerView];
     if (CGRectContainsPoint(self.containerView.bounds, point) ) {
         NSLog(@"touched inside container view");
     } else {
