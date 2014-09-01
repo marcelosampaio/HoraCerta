@@ -31,7 +31,14 @@
     self.listener=[[Listener alloc]init];
     [self.listener updateMenuWithAction:-1];
     
+    // Container View
     self.containerView.backgroundColor=[UIColor greenColor];
+    
+    // View Background
+    self.view.backgroundColor=APP_COLOR;
+    
+    // Analog Clock
+    [self analogClock];
 
 }
 
@@ -163,6 +170,77 @@
 #pragma mark - Status Bar
 -(BOOL)prefersStatusBarHidden {
     return YES;
+}
+
+#pragma mark - Analog Clock
+-(void)analogClock {
+    // add the clock to UI
+    int size=200;
+    BEMAnalogClockView *clock = [[BEMAnalogClockView alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2-(size/2), self.view.frame.size.height/2-(size/2), size,size)];
+    clock.delegate = self;
+    clock.tag=1;
+    clock.enableShadows = NO;
+    clock.realTime = YES;
+    clock.currentTime = YES;
+    clock.setTimeViaTouch = NO;
+    clock.borderColor = APP_DETAIL_COLOR;
+    clock.borderWidth = 3.00f;
+    clock.faceBackgroundColor = APP_COLOR;
+    clock.faceBackgroundAlpha = 1.0;
+    clock.digitFont = [UIFont fontWithName:@"HelveticaNeue-Thin" size:17];
+    clock.digitColor = APP_DETAIL_COLOR;
+    clock.enableDigit = YES;
+    clock.enableGraduations = YES;
+    clock.hourHandColor=APP_DETAIL_COLOR;
+    clock.hourHandOffsideLength=0;
+    clock.hourHandLength=35;
+    clock.minuteHandColor=APP_DETAIL_COLOR;
+    clock.minuteHandOffsideLength=0;
+    clock.minuteHandLength=55;
+    clock.secondHandColor=APP_DETAIL_COLOR;
+    clock.secondHandOffsideLength=0;
+    clock.secondHandAlpha=0.30f;
+    clock.secondHandLength=55;
+
+    [self.view addSubview:clock];
+}
+
+#pragma mark - Analog Clock Delegate Methods
+- (CGFloat)analogClock:(BEMAnalogClockView *)clock graduationLengthForIndex:(NSInteger)index {
+    if (clock.tag == 1) {
+        if (!(index % 5) == 1) { // Every 5 graduation will be longer.
+            return 20;
+        } else {
+            return 5;
+        }
+    }
+    else return 0;
+}
+
+- (UIColor *)analogClock:(BEMAnalogClockView *)clock graduationColorForIndex:(NSInteger)index {
+    if (!(index % 15) == 1) { // Every 15 graduation will be blue.
+        return APP_DETAIL_COLOR;
+    } else {
+        return APP_DETAIL_COLOR;
+    }
+}
+
+-(CGFloat)analogClock:(BEMAnalogClockView *)clock graduationAlphaForIndex:(NSInteger)index {
+    return (CGFloat) 1.00f;
+}
+
+//-(CGFloat)analogClock:(BEMAnalogClockView *)clock graduationOffsetForIndex:(NSInteger)index {
+//    return 1.00f;
+//}
+
+- (void)currentTimeOnClock:(BEMAnalogClockView *)clock Hours:(NSString *)hours Minutes:(NSString *)minutes Seconds:(NSString *)seconds {
+    if (clock.tag == 1) {
+        int hoursInt = [hours intValue];
+        int minutesInt = [minutes intValue];
+        int secondsInt = [seconds intValue];
+        NSString *temp=[NSString stringWithFormat:@"%02d:%02d:%02d", hoursInt, minutesInt, secondsInt];
+        NSLog(@"... pulsing       %@",temp);
+    }
 }
 
 @end

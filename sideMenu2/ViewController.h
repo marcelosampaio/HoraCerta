@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "Listener.h"
+#import "BEMAnalogClockView.h"
 
-@interface ViewController : UIViewController
+// App Color
+#define APP_COLOR               [UIColor colorWithRed:0.05f green:0.50f blue:0.20f alpha:1]
+#define APP_DETAIL_COLOR        [UIColor whiteColor]
+
+
+@interface ViewController : UIViewController<BEMAnalogClockDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *menuOutlet;
 @property (weak, nonatomic) IBOutlet UIButton *menuTop;
